@@ -1,0 +1,50 @@
+{
+  "name": "pdf-mngr",
+  "version": "1.0.0",
+  "description": "library to display and manager a pdf",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComeAlongErica/pdf-mngr.git"
+  },
+  "author": "comealongerica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComeAlongErica/pdf-mngr/issues"
+  },
+  "homepage": "https://github.com/ComeAlongErica/pdf-mngr#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-json": "^4.1.0",
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.3.1",
+    "prettier": "^2.5.1",
+    "rollup": "^2.66.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "ts-jest": "^27.1.3",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "files": [
+    "dist"
+  ]
+}
